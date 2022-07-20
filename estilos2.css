@@ -1,0 +1,362 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bangers&family=Black+Ops+One&family=Carter+One&family=Russo+One&family=Stick+No+Bills:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bangers&family=Carter+One&family=Russo+One&family=Stick+No+Bills:wght@200&display=swap');
+* {
+    box-sizing: border-box;
+    
+}
+
+img {
+    position:fixed;
+    margin: -300px -400px;
+    opacity: 0.3;
+    
+}
+
+body {
+    
+    background: rgb(0, 0, 0);
+    background-repeat: no repeat;
+    background-size: 100%;
+    
+   
+   
+}
+.nav-bar {
+    background: #E38646;
+    padding: 20px;
+    display:inline;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 100%;
+   
+    
+    
+}
+.menu, .submenu {
+    list-style: none;
+    padding:2px;
+    margin: 0.7px;
+    position:absolute;
+   
+    
+    
+}
+.menu {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    margin-left: -100%;
+    font-family: 'Carter One', cursive;
+    
+    
+}
+.menu__link {
+    display:flow-root;
+    padding: 10px;
+    color: rgb(193, 218, 219);
+    font-size: 1.0em;
+    text-decoration: none;
+    align-items: center;
+    
+}
+
+.menu__link:hover {
+    background:#444;
+}
+.submenu .menu__link:hover{
+    background: #222;
+}
+
+.submenu {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.9s;
+}
+
+
+.submenu .menu__link {
+    background: rgb(0, 0, 0);
+    padding-left: 50px;
+}
+
+@media(min-width:1024px){
+    .nav-bar {
+    display: none;
+    }
+    .menu {
+    margin-left: 0;
+    display:flex;
+    }
+    .container-submenu{
+        position: relative;
+    }
+    .submenu {
+    position:absolute;
+    top:60px;
+    width: 200px;
+    overflow: visible;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    }
+    .container-submenu:hover .submenu {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+ul {
+    display:inline;
+    position:relative;
+}
+
+h1   {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+    font-size: 32px;
+    margin-left: 10px;
+    font-family: 'Black Ops One', cursive;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px black;
+    animation-duration: 6s;
+            }
+
+
+ h1:hover {
+    color: rgb(10, 67, 85);
+   }         
+   
+.mouse:hover {
+    color: rgb(91, 132, 145);
+}
+
+ p {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+    font-size: 18px;
+    margin-left: 10px;
+    font-family: 'Audiowide', cursive;
+    color: rgb(160, 204, 211);
+    text-shadow: 2px 2px black;
+}
+section {
+    width: 500px;
+}
+
+.seccionpie {
+    margin-left: 350px;
+}
+.seccionpie2 {
+    margin-left: 400px;
+    height: 100vh;
+    
+    
+}
+
+
+h2 {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(5, 51, 53);
+    border-radius: 100px;
+    box-shadow: 5px 5px 15px rgb(178, 192, 202);
+    text-align:center;
+
+    font-size: 60px;
+    margin-left: 10px;
+    font-family: 'Audiowide', cursive;
+    color: rgb(46, 117, 134);
+    text-shadow: 7px 7px black;
+
+    animation-duration: 2s;
+        animation-name: slidein;
+        animation-direction: alternate;
+          }
+          
+          @keyframes slidein {
+            from {
+              margin-left: 100%;
+              width: 200%
+            }
+          
+            to {
+              margin-left: 0%;
+              width: 100%;
+            }
+            }
+
+
+    footer {
+        
+        background-color: rgb(147, 204, 214);
+        position: static;
+        padding: 0;
+        margin-left: 80px;
+        width: 85%;
+        border: 20px;
+        
+        color: white;
+        color:black;
+        font-size: 20px;
+        display: flex;
+        }
+
+    .piesito {
+            
+            color: rgb(99, 233, 199);
+            align-items: center;
+            margin-left: 330px;
+            font-size: 25px;
+            text-shadow: 3px 3px 5px rgb(70, 132, 189);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+
+    .contenido {
+    
+    border: 7px outset rgb(11, 81, 109);
+    border-radius: 19px;
+    height: 220px;
+    width: 300px;
+    font-size: 25px;
+    text-shadow: 2px 2px  black;
+    margin-left: 950px;
+    margin-top: -30px;
+    position:absolute;
+   
+    font-family:monospace;
+    color:rgb(255, 255, 255);
+   
+    
+
+
+   }
+   .contenido:hover {
+    color:rgb(194, 145, 89);
+    
+   
+
+   }
+
+   .container{
+    width:30%;
+    max-width:30px;
+    padding:32px 64px;
+    margin:auto;
+}
+
+
+
+
+div.social-btn {
+    display:flexbox;
+    width: 665px;
+    margin: 0 auto;
+    text-align: center;
+}
+div.social-btn a {
+    text-decoration: none;
+}
+div.social-btn div {
+    width: 130px;
+    display:block;
+    float:right;
+    height: 77px;
+    line-height: 120px;
+    color: rgb(115, 250, 255);
+    margin-right: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-shadow:0px 0px 5px #000;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    margin-bottom: 50px;
+}
+div.social-btn a:last-child div {
+    margin-right: 0;
+}
+div.social-btn div:hover, div.social-btn div:active {
+    height: 65px;
+    padding-top: 13px;
+}
+i {
+    -moz-transition: all 0.8s ease-out;
+    -webkit-transition: all 0.8s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+div.face span, div.twi span, div.in span, div.pin span, div.git span{
+    position: absolute;
+    left: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    width: 10px;
+    padding: 0px 15px;
+    opacity: 0;
+    -moz-transition: all 0.6s ease-in;
+    -o-transition: all 0.6s ease-in;
+    -webkit-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+    line-height:39px;
+    font-size: 20px;
+}
+div.social-btn div:hover i  {
+    opacity: 0;
+}
+div.social-btn div:hover span {
+    opacity: 1;
+}
+div.face {
+    background: #3A5795;
+    -moz-box-shadow: 0px 4px 0px #1e469d;
+    -webkit-box-shadow: 0px 4px 0px #1e469d;
+    box-shadow: 0px 4px 0px #3e6d8d;
+    position: relative;
+    opacity: 0.5;
+}
+
+div.twi {
+    background: #5EA9DD;
+    -moz-box-shadow: 0px 4px 0px #186ba4;
+    -webkit-box-shadow: 0px 4px 0px #186ba4;
+    box-shadow: 0px 4px 0px #2b95df;
+    position: relative;
+    opacity: 0.5;
+}
+div.in {
+    background: #0177B5;
+    -moz-box-shadow: 0px 4px 0px #035e8e;
+    -webkit-box-shadow: 0px 4px 0px #035e8e;
+    box-shadow: 0px 4px 0px #035e8e;
+    position:relative;
+    opacity:0.5
+}
+div.pin {
+    background: #D73532;
+    -webkit-box-shadow: 0px 4px 0px #b51c19;
+    -moz-box-shadow: 0px 4px 0px #b51c19;
+    box-shadow: 0px 4px 0px #b51c19;
+    position: relative;
+    opacity: 0.5;
+}
+div.git {
+    background: #BBBBBB;
+    -webkit-box-shadow: 0px 4px 0px #b51c19;
+    -moz-box-shadow: 0px 4px 0px #b51c19;
+    box-shadow: 0px 4px 0px #9a9a9a;
+    position: relative;
+    opacity: 0.5;
+}
+div.git i {
+    text-shadow: none;
+}
+
+.derechos {
+    color:rgb(9, 209, 192);
+    text-shadow: 2px 2px 5px black;
+    font-family:  Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
